@@ -78,7 +78,12 @@ jobs:
        git clone https://github.com/fw876/helloworld.git
        git clone https://github.com/jerrykuku/luci-app-argon-config.git
        rm -rf luci-theme-argon
-       git clone https://github.com/jerrykuku/luci-theme-argon.git   
+       git clone https://github.com/jerrykuku/luci-theme-argon.git
+        
+    - name: change default theme
+      run: |
+       cd openwrt
+       sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
        
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
