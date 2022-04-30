@@ -16,4 +16,4 @@ sed -i 's/OpenWrt/MiNano/g' package/base-files/files/bin/config_generate
 # wifiname
 sed -i 's/OpenWrt/MiNano/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 # theme
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
